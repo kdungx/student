@@ -10,7 +10,7 @@ class StudentController extends Controller
 {
     public function index()
     {
-        $students = DB::table();
+        $students = DB::table("students")->get();
         return view('students.index', compact('students'));
     }
 
